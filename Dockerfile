@@ -1,7 +1,7 @@
 FROM python:3.11-slim
 
 RUN apt-get update && apt-get install gcc -y
-dig pypi.org
+RUN apt-get install python-pip
 RUN pip install langflow
 
 EXPOSE 7860
